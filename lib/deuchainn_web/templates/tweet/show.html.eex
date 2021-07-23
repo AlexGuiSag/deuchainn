@@ -1,0 +1,23 @@
+<h1>Show Tweet</h1>
+
+<ul>
+
+  <li>
+    <strong>User:</strong>
+    <%= @tweet.user %>
+  </li>
+
+  <li>
+    <strong>Adress:</strong>
+    <%= @tweet.adress %>
+  </li>
+
+  <li>
+    <strong>Twitter:</strong>
+    <%= @tweet.twitter %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.tweet_path(@conn, :edit, @tweet) %></span>
+<span><%= link "Back", to: Routes.tweet_path(@conn, :index) %></span>
